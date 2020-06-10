@@ -1,0 +1,2 @@
+# BasicBash
+Just random BASH
