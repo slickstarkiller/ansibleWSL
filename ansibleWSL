@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#basic install of ansible using pip within WSL - assuming you have installed 18.04 and not 20.04 (crap)
+#Preston Lasebikan @ 10JUN2020 ansible
+
+echo "Current date : $(date) @ $(hostname)"
+echo "This will use ansible-2.9.9.tar.gz as of $(data)"
+
+echo "Update and upgrade main packages within 18.04"
+apt update && apt upgrade -y
+
+echo "Installing Pip"
+apt install python3-pip -y
+
+echo "Installing ansible...."
+pip3 install ansible 
